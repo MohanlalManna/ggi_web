@@ -1,0 +1,51 @@
+/*navigation bar*/
+.nav{
+    background-color: aqua;
+    height: 35px;
+  
+}
+.nav ul{
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+}
+.nav ul li{
+    padding: 8px;
+    font-size: 15px;
+    transition: 0.5s;
+    font-style:initial;
+    z-index: 2;
+}
+.nav ul li:hover{
+    background:linear-gradient(rgb(244, 111, 9),rgb(223, 199, 13));
+    color: white;
+}
+.nav ul li ul {
+    list-style-type: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    padding: 0px;
+    margin-top:9.5px;
+    display:none;
+    color:black
+}
+.nav ul li:hover ul{
+    display: block;
+}
+.nav ul li ul li ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    padding: 0px;
+    margin-top:9.5px;
+    margin-left: 65px;
+    color:black;
+    display: none;
+}
+.nav ul li ul li:hover ul{
+    display: block;
+}
+/**/
